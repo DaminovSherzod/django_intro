@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def home(request):
-    print(request.body)
+    print(request.method)
     r = HttpResponse('Hello World')
     return r
     
