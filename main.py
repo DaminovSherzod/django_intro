@@ -1,7 +1,6 @@
 #Import reqests module
 import requests
-#Import json module
-import json
+
 
 #Define the main function
 def main():
@@ -16,10 +15,5 @@ def main():
     data = r.json()
     #Print the json data
     print(data)
-    # zsh script get my local IP address
-    # ip=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
-    
 
-#Run the main function
-if __name__ == "__main__":
-    main()
+main()
