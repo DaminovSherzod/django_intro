@@ -5,7 +5,9 @@ from django.http import JsonResponse
 
 
 def home(request):
-    print(request.method)
+    #Get query parameters
+    a = request.GET.get('a')
+    print(a)
     r = JsonResponse({'message': 'Hello World'})
     return r
     
