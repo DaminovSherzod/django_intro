@@ -1,9 +1,14 @@
 
 from django.urls import path
-from myapp.views import index, home, about, contact
+#Import admin from django.contrib
+from django.contrib import admin
+#Import views from myapp
+from myapp.views import index,home,about,contact,getProduct
 urlpatterns = [
-    path('', home),
-    path('about/', about),
-    path('contact/', contact),
-    path('index/', index),
+    path('admin/', admin.site.urls),   
+    path('', index),
+    #Get product
+    path('getProduct/', getProduct),
+
+
 ]
